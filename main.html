@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Backlog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div id="tela-login">
+        <div class="login-box">
+            <h2>Acesso ao Backlog</h2>
+            <input type="email" id="emailLogin" placeholder="Seu e-mail">
+            <input type="password" id="senhaLogin" placeholder="Sua senha">
+            <button id="botaoEntrar">Entrar no Sistema</button>
+            <p id="mensagemErro" class="erro escondido">E-mail ou senha incorretos.</p>
+        </div>
+    </div>
+
+    <div id="app-principal" class="escondido">
+        <button id="botaoSair" class="btn-sair">Sair da Conta</button>
+        
+        <h1>Minhas Ideias</h1>
+
+        <div id="area-formulario">
+            <label>Atividade</label>
+            <input type="text" id="inputAtividade" placeholder="Ex: Sistema de RPG">
+
+            <label>Linguagem</label>
+            <input type="text" id="inputLinguagem" placeholder="Ex: Java, HTML...">
+
+            <label>Observações</label>
+            <textarea id="inputObservacoes" placeholder="Detalhes..."></textarea>
+
+            <button id="saveButton">Salvar</button>
+        </div>
+
+        <div id="lista-ideias"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
